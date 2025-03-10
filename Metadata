@@ -1,0 +1,22 @@
+{
+  "name": "Signed",
+  "symbol": "SIGN",
+  "description": "Signed is a web3-based music royalty platform that enables musicians to tokenize their royalty streams.",
+  "image": "ipfs://a51dd3e1-4453-4718-900d-fb6558881a82",
+  "external_url": "https://signed.trade",
+  "properties": {
+    "category": "Music",
+    "creators": [
+      {
+        "name": "Signed Platform",
+        "share": 100
+      }
+    ],
+    "files": [
+      {
+        "uri": "ipfs://a51dd3e1-4453-4718-900d-fb6558881a82",
+        "type": "image/png"
+      }
+    ]
+  }
+}
