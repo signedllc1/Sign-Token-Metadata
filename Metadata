@@ -1,41 +1,22 @@
-// update_metadata.js
-const fs = require('fs');
-const path = require('path');
-
-// Path to your metadata file
-const metadataPath = path.join(__dirname, 'Metadata');
-
-// Read the current metadata file
-fs.readFile(metadataPath, 'utf8', (err, data) => {
-  if (err) {
-    console.error('Error reading metadata file:', err);
-    return;
-  }
-
-  try {
-    // Parse the JSON data
-    const metadata = JSON.parse(data);
-
-    // Update the image URL
-    metadata.image = "https://raw.githubusercontent.com/signedllc1/Sign-Token-Metadata/main/STLoop_Logo.png";
-    
-    // Also update the image in the files array if it exists
-    if (metadata.properties && metadata.properties.files && metadata.properties.files.length > 0) {
-      metadata.properties.files[0].uri = "https://raw.githubusercontent.com/signedllc1/Sign-Token-Metadata/main/STLoop_Logo.png";
-    }
-
-    // Convert back to JSON with pretty formatting
-    const updatedData = JSON.stringify(metadata, null, 2);
-
-    // Write the updated metadata back to the file
-    fs.writeFile(metadataPath, updatedData, 'utf8', (writeErr) => {
-      if (writeErr) {
-        console.error('Error writing updated metadata:', writeErr);
-        return;
+{
+  "name": "Signed",
+  "symbol": "SIGN",
+  "description": "Signed is a web3-based music royalty platform that enables musicians to tokenize their royalty streams.",
+  "image": "https://raw.githubusercontent.com/signedllc1/Sign-Token-Metadata/main/STLoop_Logo.png",
+  "external_url": "https://signed.trade",
+  "properties": {
+    "category": "Music",
+    "creators": [
+      {
+        "name": "Signed Platform",
+        "share": 100
       }
-      console.log('Metadata successfully updated with new image URL!');
-    });
-  } catch (parseErr) {
-    console.error('Error parsing metadata JSON:', parseErr);
+    ],
+    "files": [
+      {
+        "uri": "https://raw.githubusercontent.com/signedllc1/Sign-Token-Metadata/main/STLoop_Logo.png",
+        "type": "image/png"
+      }
+    ]
   }
-});
+}
