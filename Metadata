@@ -3,7 +3,14 @@
   "symbol": "SIGN",
   "description": "Signed is a web3-based music royalty platform that enables musicians to tokenize their royalty streams.",
   "image": "https://raw.githubusercontent.com/signedllc1/Sign-Token-Metadata/main/STLoop_Logo.png",
-  "external_url": "https://signed.trade",
+  "external_url": "https://signed.trade/artists",
+  "links": {
+    "website": "https://signed.trade/artists",
+    "twitter": "https://x.com/SignedLLC",
+    "telegram": "https://t.me/signed_llc",
+    "discord": "https://discord.gg/4dtSQv48",
+    "instagram": "https://www.instagram.com/signed_llc/"
+  },
   "properties": {
     "category": "Music",
     "creators": [
@@ -17,6 +24,12 @@
         "uri": "https://raw.githubusercontent.com/signedllc1/Sign-Token-Metadata/main/STLoop_Logo.png",
         "type": "image/png"
       }
-    ]
+    ],
+    "socials": {
+      "twitter": "SignedLLC",
+      "telegram": "signed_llc",
+      "discord": "4dtSQv48",
+      "instagram": "signed_llc"
+    }
   }
 }
